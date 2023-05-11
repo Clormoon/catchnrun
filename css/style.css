@@ -9,6 +9,10 @@
   .footer {
     padding: 10px;
   }
+  .img{
+    width: 100%;
+    height: auto;
+  }
 }
 @media screen and (max-width: 601px) {
   /* styles à appliquer pour les écrans de moins de 601px */
@@ -20,6 +24,10 @@
   }
   .footer {
     padding: 10px;
+  }
+  .img{
+    max-width: 600px;
+    height: auto;
   }
 }
 
