@@ -1,35 +1,37 @@
-@media screen and (max-width: 600px) {
-  /* styles à appliquer pour les écrans de moins de 600px */
-  body {
-    font-size: 14px;
+/* Style pour tous les écrans */
+body {
+    font-size: 16px;
   }
-  .header {
-    display: none;
+  
+  /* Style pour les écrans de taille moyenne (tablettes) */
+  @media only screen and (min-width: 768px) {
+    body {
+      font-size: 18px;
+    }
+    .img{
+        max-width: 50%;
+    }
   }
-  .footer {
-    padding: 10px;
+  
+  /* Style pour les grands écrans (ordinateurs de bureau) */
+  @media only screen and (min-width: 992px) {
+    body {
+      font-size: 20px;
+    }
+    .img{
+        max-width: 33%;
+    }
   }
-  .img{
-    width: 100%;
-    height: auto;
+  
+  /* Style pour les petits écrans (téléphones) */
+  @media only screen and (max-width: 767px) {
+    body {
+      font-size: 14px;
+    }
+    .img{
+        max-width: 100%;
+    }
   }
-}
-@media screen and (max-width: 601px) {
-  /* styles à appliquer pour les écrans de moins de 601px */
-  body {
-    font-size: 14px;
-  }
-  .header {
-    display: none;
-  }
-  .footer {
-    padding: 10px;
-  }
-  .img{
-    max-width: 600px;
-    height: auto;
-  }
-}
 
 /*structure de la page*/
 html,
